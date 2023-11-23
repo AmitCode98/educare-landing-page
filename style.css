@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Custom css variables */
+:root {
+    --background-color: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    border: none;
+    
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Container class */
+.container {
+    padding: 0 4rem;
+}
+
+/* button */
+button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Header section */
+header {
+    /* padding: 16px 0; */
+    height: 124px;
+    background-color: #F9E0AE;
+    display: flex;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav__menu li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav__btn {
+    background-color: #C24914;
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+
+.nav__icon {
+    display: none;
+}
+
+.nav__drodown {
+    display: none;
+}
+
+/* hero section  */
+
+.hero{
+    min-height: calc(100vh - 90px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+   
+}
+
+/* Mobile screen */
+@media screen and (max-width:992px) {
+
+    /* Container class */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Header section */
+    header {
+        height: 90px;
+
+    }
+
+    .nav__content {
+        display: none;
+        /* flex-direction: column;
+        align-items: flex-end; */
+    }
+
+    .nav__menu {
+        display: none;
+        /* flex-direction: column;
+        align-items: flex-end; */
+    }
+
+    .nav__icon {
+        display: block;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .nav__drodown {
+        display: flex;
+        width: 80%;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        background-color: rebeccapurple;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    
+}
